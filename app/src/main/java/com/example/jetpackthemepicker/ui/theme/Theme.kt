@@ -210,7 +210,7 @@ enum class ColorPalette {
 }
 
 @Composable
-fun ComposeCookBookTheme(
+fun JetpackTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     colorPalette: ColorPalette = ColorPalette.GREEN,
     content: @Composable() () -> Unit
@@ -236,7 +236,7 @@ fun BaseView(
     val color = appThemeState.pallet.getMaterialColor()
 
     systemUiController?.setStatusBarColor(color = color, darkIcons = appThemeState.darkTheme)
-    ComposeCookBookTheme(darkTheme = appThemeState.darkTheme, colorPalette = appThemeState.pallet) {
+    JetpackTheme(darkTheme = appThemeState.darkTheme, colorPalette = appThemeState.pallet) {
         content()
     }
 }
