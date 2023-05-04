@@ -1,4 +1,4 @@
-package com.example.jetpackthemepicker
+package com.example.jetpackthemepicker // Replace the package name with yours
 
 import android.content.Intent
 import android.os.Bundle
@@ -34,6 +34,9 @@ import com.example.jetpackthemepicker.ui.theme.BaseView
 import com.example.jetpackthemepicker.ui.theme.SystemUiController
 import com.example.jetpackthemepicker.ui.theme.ThemeActivity
 
+/**
+ * This screen defines the entire navigation flow of activities and the home screen UI
+ * */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,7 +48,6 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
-
 
     @OptIn(ExperimentalMaterial3Api::class)
     @Preview
@@ -88,10 +90,8 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-
     private fun getComponents() = listOf(
         Component("Theme", ThemeActivity::class.java),
     )
 
 }
-

@@ -39,6 +39,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
+/**
+ * ThemeActivity -> lets users change the theme of the screen
+ *
+ * */
+
 class ThemeActivity : ComponentActivity() {
 
     lateinit var appTheme: MutableState<AppThemeState>
